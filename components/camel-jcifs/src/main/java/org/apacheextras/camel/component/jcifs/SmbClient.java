@@ -173,7 +173,6 @@ public class SmbClient {
     try {
       sFile.delete();
     } catch (SmbException e) {
-      LOGGER.error("Could not delete '{}' due to '{}'", e.getMessage(), e);
       return false;
     }
     return true;
